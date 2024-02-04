@@ -144,7 +144,7 @@ const ChatPage = ({ socket, username, roomId }: any) => {
                         </div>
                       ))}
                       <button className={style.category_button} disabled>
-                        Select Category
+                        disabled
                       </button>
                     </div>
                   ):( // draw the category that my group has not selected
@@ -153,12 +153,12 @@ const ChatPage = ({ socket, username, roomId }: any) => {
                       {audioset.audios.map((audioItem, audioIndex) => (
                         <div key={audioIndex}>
                           <button className={style.main_button} disabled>
-                            {audioItem.name}
+                            disabled
                           </button>
                         </div>
                       ))}
                       <button className={style.category_button} disabled>
-                        Select Category
+                      disabled
                       </button>
                     </div>
                   )

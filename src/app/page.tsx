@@ -11,15 +11,18 @@ export default function Home() {
   const [showSpinner, setShowSpinner] = useState(false);
   const [roomId, setroomId] = useState("");
   const [warningMsg, setWarningMsg] = useState("");
+  const [invalidId, setInvalidId] = useState(false);
   
   var socket = io('https://haramchr.com', {secure: true});
   
   useEffect(() => {
     socket.on("is_duplicated_id", (data: any) => {
       if (data.is_duplicated) {
-        setWarningMsg(data.id + " is already used. Please use another name.");
+        setInvalidId(true);
+        setWarningMsg(data.id + " is already used.");
         console.log(data.is_duplicated, warningMsg);
       }else{
+        setInvalidId(false);
         setWarningMsg("");
         console.log(data.is_duplicated, warningMsg);
       }
@@ -42,7 +45,7 @@ export default function Home() {
         setShowSpinner(false);
       }, 250);
     } else {
-      alert("Please fill in Username and Room Id");
+      setWarningMsg("Please fill in Username and Group");
     }
   };
 
@@ -68,16 +71,33 @@ export default function Home() {
           onChange={(e) => setroomId(e.target.value)}
           disabled={showSpinner}
         />
-        <button className={styles.main_button} onClick={() => handleJoin()}>
+        {invalidId?(
+          <button className={styles.main_button} onClick={() => handleJoin()} disabled>
           {!showSpinner ? (
             "Join"
           ) : (
             <div className={styles.loading_spinner}></div>
           )}
         </button>
+        ):(
+          <button className={styles.main_button} onClick={() => handleJoin()}>
+          {!showSpinner ? (
+            "Join"
+          ) : (
+            <div className={styles.loading_spinner}></div>
+          )}
+        </button>
+        )}
+        {/* <button className={styles.main_button} onClick={() => handleJoin()}>
+          {!showSpinner ? (
+            "Join"
+          ) : (
+            <div className={styles.loading_spinner}></div>
+          )}
+        </button> */}
       </div>
       <div style={{ display: !showChat ? "none" : "" }}>
-        <ChatPage socket={socket} roomId={roomId} username={userName} />
+        <ChatPage socket={socket} roomId={roomId} username={userName}/>
       </div>
     </div>
   );
