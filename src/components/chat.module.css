@@ -1,0 +1,113 @@
+
+.chat_div {
+    padding:10px;
+    height: 14vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+  }
+  .chat_border {
+    border: 1px solid red;
+    padding: 5px;
+  }
+  .chat_input {
+    height: 2rem;
+    width: 15rem;
+    padding: 5px;
+  }
+  .chat_button {
+    height: 2rem;
+  }
+  .chatProfileRight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row-reverse;
+    margin-bottom: 5px;
+  }
+  .chatProfileLeft {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  .chatProfileSpan {
+    background-color: rgb(213, 213, 182);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  .main_button {
+    height: 3rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
+    font-size: large;
+    color:#ffffff;
+    border: 1px solid #999999;
+  }
+  .main_button:disabled,
+  .main_button[disabled] {
+    height: 3rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
+    font-size: large;
+    color:#666666;
+    border: 1px solid #000000;
+  }
+  .category_button {
+    height: 3rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:3px;
+    font-size: large;
+    background-color: #0099cc;
+    color:#ffffff;
+  }
+  .category_button:disabled,
+  .category_button[disabled]{
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #666666;
+}
+  .audio_list_div {
+    padding:10px;
+    height: 100%;
+    width: 100vw;
+    margin:auto;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  .audio_list_border {
+    border: 1px solid black;
+    padding: 5px;
+    justify-content: center;
+    margin:auto;
+    display:flex;
+  }
+  .player_div {
+    padding:10px;
+    height: 20vh;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+  }
+  .player_border {
+    border: 1px solid grey;
+    padding: 5px;
+
+  }
