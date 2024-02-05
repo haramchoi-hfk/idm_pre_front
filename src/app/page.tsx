@@ -90,13 +90,6 @@ export default function Home() {
           )}
         </button>
         )}
-        {/* <button className={styles.main_button} onClick={() => handleJoin()}>
-          {!showSpinner ? (
-            "Join"
-          ) : (
-            <div className={styles.loading_spinner}></div>
-          )}
-        </button> */}
       </div>
       <div style={{ display: !showChat ? "none" : "" }}>
         <GroupPage socket={socket} roomId={roomId} username={userName}/>

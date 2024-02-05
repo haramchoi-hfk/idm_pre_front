@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "IDM 3D Audio",
-  description: "IDM 3D Audio, AB DW HA",
+  description: "IDM 3D Audio, AB DW HC",
 };
 
 export default function RootLayout({

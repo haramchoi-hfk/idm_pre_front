@@ -103,6 +103,48 @@ const audio = [
                 src: "https://haramchoi-hfk.github.io/idm_media_hosting/ru3.wav"
             }
         ],
+    },
+    {
+        category: "5 - category - CMN",
+        audios: [
+            {
+                name: "5-CMN-0",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/cn0.wav"
+            },
+            {
+                name: "5-CMN-1",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/cn1.wav"
+            },
+            {
+                name: "5-CMN-2",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/cn2.wav"
+            },
+            {
+                name: "4-CMN-3",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/cn3.wav"
+            }
+        ],
+    },
+    {
+        category: "6 - category - JA",
+        audios: [
+            {
+                name: "6-JA-0",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/ja0.wav"
+            },
+            {
+                name: "6-JA-1",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/ja1.wav"
+            },
+            {
+                name: "6-JA-2",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/ja2.wav"
+            },
+            {
+                name: "6-JA-3",
+                src: "https://haramchoi-hfk.github.io/idm_media_hosting/ja3.wav"
+            }
+        ],
     }
 ];
 

@@ -24,7 +24,7 @@ const GroupPage = ({ socket, username, roomId }: any) => {
   const [members, setMembers] = useState([]);
   const [category, setCategory] = useState("-1");
   const [currentTrack, setTrackIndex] = React.useState(AUDIO_PER_CATEGORY + 1)
-  const [occupied, setOccupied] = useState([0, 0, 0, 0, 0]);
+  const [occupied, setOccupied] = useState([0, 0, 0, 0, 0, 0, 0]);
   //---------------------------------------------------------
   const refreshMembers = async () => {
     await socket.emit("refresh_members", roomId);
