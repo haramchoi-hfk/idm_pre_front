@@ -84,7 +84,7 @@ const ChatPage = ({ socket, username, roomId }: any) => {
           onClickNext={handleClickNext}
           onEnded={handleEnd}
         />
-        <p>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>
           {playlist[currentTrack][1]}
         </p>
       </div>
@@ -105,8 +105,8 @@ const ChatPage = ({ socket, username, roomId }: any) => {
   }
   //---------------------------------------------------------
   return (
-    <><div className={style.chat_div}>
-      <div className={style.chat_border}>
+    <><div className={style.base_div}>
+      <div className={style.base_border}>
         <div style={{ marginBottom: "1rem" }}>
           <p>
             Group: <b>{roomId}</b>
@@ -198,21 +198,6 @@ const ChatPage = ({ socket, username, roomId }: any) => {
               ))
               )
             }
-            {/* {audio.map((audioset, index) => (
-                <div key={index}>
-                <p><b>{audioset.category}</b></p>
-                {audioset.audios.map((audioItem, audioIndex) => (
-                  <div key={audioIndex}>
-                    <button className={style.main_button} onClick={() => handleSelectTrack(index * AUDIO_PER_CATEGORY + audioIndex)}>
-                      {audioItem.name}
-                    </button>
-                  </div>
-                ))}
-                <button className={style.category_button} onClick={() => handleSelectCategory(audioset.category[0])} disabled>
-                  Select Category
-                </button>
-              </div>
-            ))} */}
           </div>
         </div>
       </div>

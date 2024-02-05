@@ -1,21 +1,21 @@
 
-.chat_div {
+.base_div {
     padding:10px;
     height: 14vh;
     width: 100vw;
     align-items: center;
     flex-direction: column;
   }
-  .chat_border {
+  .base_border {
     border: 1px solid red;
     padding: 5px;
   }
-  .chat_input {
+  .base_input {
     height: 2rem;
     width: 15rem;
     padding: 5px;
   }
-  .chat_button {
+  .base_button {
     height: 2rem;
   }
   .chatProfileRight {
@@ -111,3 +111,4 @@
     padding: 5px;
 
   }
+  

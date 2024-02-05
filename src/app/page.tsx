@@ -4,6 +4,8 @@ import io from "socket.io-client"; // Import 'io' as the default import
 import { useState } from "react";
 import React, { useEffect } from "react";
 import ChatPage from "@/components/page";
+import Footer from "@/components/footer";
+
 
 export default function Home() {
   const [showChat, setShowChat] = useState(false);
@@ -99,6 +101,8 @@ export default function Home() {
       <div style={{ display: !showChat ? "none" : "" }}>
         <ChatPage socket={socket} roomId={roomId} username={userName}/>
       </div>
+      <Footer />
     </div>
+    
   );
 }
