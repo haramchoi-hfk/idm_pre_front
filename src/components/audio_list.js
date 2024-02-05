@@ -1,6 +1,6 @@
 const audio = [
     {
-        category: "category0 - DE",
+        category: "1st category - DE",
         audios: [
             {
                 name: "0-DE-0",
@@ -21,7 +21,7 @@ const audio = [
         ],
     },
     {
-        category: "category1 - KR",
+        category: "2nd category - KR",
         audios: [
             {
                 name: "1-KR-0",
@@ -42,7 +42,7 @@ const audio = [
         ],
     },
     {
-        category: "category2 - ES",
+        category: "3rd category - ES",
         audios: [
             {
                 name: "2-ES-0",
@@ -63,7 +63,7 @@ const audio = [
         ],
     },
     {
-        category: "category3 - EN",
+        category: "4th category - EN",
         audios: [
             {
                 name: "3-EN-0",
