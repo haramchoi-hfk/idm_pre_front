@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import io from "socket.io-client"; // Import 'io' as the default import
 import { useState } from "react";
 import React, { useEffect } from "react";
-import ChatPage from "@/components/page";
+import GroupPage from "@/components/page";
 import Footer from "@/components/footer";
 
 
@@ -99,7 +99,7 @@ export default function Home() {
         </button> */}
       </div>
       <div style={{ display: !showChat ? "none" : "" }}>
-        <ChatPage socket={socket} roomId={roomId} username={userName}/>
+        <GroupPage socket={socket} roomId={roomId} username={userName}/>
       </div>
       <Footer />
     </div>

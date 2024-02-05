@@ -39,7 +39,7 @@ class Group {
 var groups = [];
 var names = [];
 var idnames = [];
-var occupied = [0,0,0,0];
+var occupied = [0,0,0,0,0];
 
 const groupExists = (group, name) => {
   return group.name === name;
